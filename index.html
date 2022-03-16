@@ -30,7 +30,7 @@
     <title>The Student Brewery</title>
 
     <link rel="stylesheet" href="./style.css">
-    <link rel="icon" href="./beer-cap.png">
+    <link rel="icon" href="./img/beer-cap.png">
 
   </head>
 
@@ -42,24 +42,22 @@
     <nav>
 
       <div class="nav-logo">
-      <img class="beer-logo" src="./beer-cap.png" alt="beer Hat">
-      <h1 class="logo-h1">The Student Brewery</h1>
-    </div>
+      <img class="beer-logo" src="./img/beer-cap.png" alt="beer Hat">
 
-    <ul>
-      <li>Home</li>
-      <li class="active">Reviews</li>
-    </ul>
+      <a href="index.html"><h1 class="logo-h1">The Student Brewery</h1></a>
+
+    </div>
 
     </nav>
 
     
     
+
     <!-- Filters -->
 
     <div class="filter-container">
 
-
+      <div class="filter-beverages-container">
         <form action="">
             <label for="type">RTD</label>
             <input type="checkbox" name="type" value="RTD">
@@ -72,7 +70,7 @@
 
             <button class="typeFilter" id="typeFilter" type = submit>Filter Beverages</button>
         </form>
-      
+      </div>
 
 
         <div class="search-container">
@@ -82,18 +80,21 @@
       </div>
 
 
-
+      <div class="select-container">
       <select name="" id="sortBtn">
         <option value="">Sort By</option>
         <option value="name">Beverage Name A - Z</option>
         <option value="what">Type of Beverage A-Z</option>
       </select>
+    </div>
 
-
-
+    <div class="refresh-container">
       <button class="refreshButton" id="refresh">Refresh Search</button>
+    </div>
 
   </div>
+
+
 
 
      <!-- card container -->
@@ -102,6 +103,9 @@
     </div>
 
     <!-- end of card container -->
+
+
+
 
 
         <!-- start of modal -->
@@ -128,11 +132,18 @@
 
         <!-- end of modal -->
 
+
+
+
+        <!-- Footer -->
+
         <section class="footer">
-          <img class="footer-img" src="./beer-cap.png" alt="">
+          <img class="footer-img" src="./img/beer-cap.png" alt="">
           <p class="footer-p">For All Your Student Needs</p>
-          <img class="footer-img" src="./beer-cap.png" alt="">
+          <img class="footer-img" src="./img/beer-cap.png" alt="">
         </section>
+
+
 
 
     <!-- Optional JavaScript -->

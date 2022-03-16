@@ -17,6 +17,18 @@ ul{
     cursor: pointer;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: white;
+    text-decoration: none;
+}
+
+
+
 li{
     padding: 2rem;
     font-family: 'Bai Jamjuree', sans-serif;
@@ -27,42 +39,95 @@ li{
     color: rgb(224, 191, 129);;
 }
 
+
+/* Nav Bar */
+
+
 nav{
-    height: 10vh;
+    height: 15vh;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     background: black;
     color: white;
-    padding-right: 10rem;
 }
 
 .logo-h1{
     font-family: 'Sigmar One', cursive;
+    letter-spacing: 0.1rem;
+    font-size: 2.2rem;
 }
 
 .nav-logo{
     display: flex;
-    justify-content: center;
     align-items: center;
-    margin-right: 20rem;
-}
-
-.content-master{
-    display: flex;
-    flex-direction: column;
 }
 
 .beer-logo{
     height: 5rem;
-    margin-right: 3rem;
+    padding-right: 3rem;
+}
+
+/* Nav Bar Finished */
+
+
+
+
+/* Filters */
+
+.filter-container{
+    height: 12vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 6%;
+    padding-right: 6%;
+    background: white;
+}
+
+.filter-beverages-container{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    padding-left: 5rem;
+}
+
+.select-container{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-left: 4rem;
+}
+
+.refresh-container{
+    height: 100%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 label{
     padding: 0.2rem;
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 400;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 .typeFilter{
@@ -72,75 +137,13 @@ label{
     background-color: white;
     border: 1px solid black;
     cursor: pointer;
+    font-size: 0.9rem;
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 400;
-}
-
-.filter-container{
-    height: 14vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 3rem;
-    background: white;
-}
-
-.search-container{
-    display: flex;
-}
-
-.search-icon{
-    pointer-events: none;
-    font-size: 2rem;
-    padding: 0.5rem;
-    margin-right: 1.2rem;
-}
-
-#searchFilter{
-    cursor: pointer;
-}
-
-.cardContent{
-    width: 100vw;
-    min-height: 135vh;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background: url(./brew.jpeg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.card--style{
-    width: 20% !important;
-    min-height: 40vh;
-    max-height: 60vh;
-    background: #FAFAF4;
-    padding: 1rem;
-    margin-right: 2rem;
-    margin-left: 2rem; 
-    margin-top: 2rem;
-}
-
-.card--style:hover{
-    background: #FAFAF4;
-    border: 4px solid whitesmoke;
-}
-
-.modal-title{
-    width: 100%;
-    font-family: 'Bai Jamjuree', sans-serif;
-    font-weight: 400;
-}
-
-.img-container{
-    padding: 1rem;
-    background: rgb(224, 191, 129);
 }
 
 .input-search{
+    height: 2.4rem;
     padding-left: 0.8rem;
     padding-right: 2rem;
     margin-right: 1rem;
@@ -148,25 +151,19 @@ label{
     font-weight: 400;
 }
 
-.card-img-top{
-    height: 100%;
+#searchFilter{
+    cursor: pointer;
 }
 
-.modalTitle{
-    text-align: center;
-    font-family: 'Sigmar One', cursive;
+.search-icon{
+    pointer-events: none;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
 }
 
-.moreInformation{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color: black;
-    background: white;
-    border: 2px solid white;
-    margin-top: 2rem;
+select{
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 400;
 }
 
 .refreshButton{
@@ -180,13 +177,106 @@ label{
     font-weight: 400;
 }
 
+/* Filters Finished */
+
+
+
+
+/* Cards */
+
+.cardContent{
+    width: 100vw;
+    max-height: 335vh;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: url(./img/brew.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 2rem;
+}
+
+.card--style{
+    width: 20% !important;
+    height: 28rem;
+    background: #FAFAF4;
+    padding: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem; 
+    margin-top: 2rem;
+}
+
+.card--style:hover{
+    background: #FAFAF4;
+    border: 4px solid whitesmoke;
+}
+
+.img-container{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    background: rgb(224, 191, 129);
+}
+
+.card-img-top{
+    height: 12rem;
+    width: 12rem;
+}
+
+.card-body{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
 .card-title{
+    font-size: 1.1rem;
     font-family: 'Sigmar One', cursive;
+    letter-spacing: 0.02rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 
 .card-text{
+    font-size: 0.9rem;
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 400;
+}
+
+.moreInformation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+    background: white;
+    border: 2px solid white;
+    margin-top: 0.4rem;
+}
+
+/* Cards Finished */
+
+
+
+/* Modal */
+
+.modal-title{
+    width: 100%;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 400;
+}
+
+.modalTitle{
+    text-align: center;
+    font-family: 'Sigmar One', cursive;
 }
 
 .model-text{
@@ -194,10 +284,11 @@ label{
     font-weight: 400;
 }
 
-select{
-    font-family: 'Bai Jamjuree', sans-serif;
-    font-weight: 400;
-}
+/* Modal Finished */
+
+
+
+/* Footer */
 
 .footer{
     height: 15vh;
@@ -209,15 +300,21 @@ select{
 }
 
 .footer-p{
+    font-size: 1rem;
     color: white;
     font-family: 'Sigmar One', cursive;
+    letter-spacing: 0.02rem;
 }
 
 .footer-img{
     height: 3.2rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-bottom: 0.8rem;
 }
+
+/* Footer Finished */
+
 
 
 
@@ -227,87 +324,255 @@ select{
 
 
 
-@media only screen and (min-width:601px) and (max-width: 1550px){
+/* Mobile */
 
-    li{
-        display: none;
-    }
+@media only screen and (max-width:565px){
 
-    nav{
-        justify-content: center;
-        padding-right: 0rem;
-    }
-
-    .nav-logo{
-        margin-right: 0rem;
-    }
-}
-
-
-
-@media only screen and (min-width:601px) and (max-width: 960px){
-    .cardContent{
-        justify-content: space-evenly;
-    }
-    .card--style{
-        width: 40% !important;
-        margin-bottom: 2rem;
-        margin-top: 2rem;
-    }
-
-    .filter-container{
-        height: 20vh;
-    }
-
-    select{
-        margin-top: 3rem;
-        margin-left: 2rem;
-    }
-
-    .refreshButton{
-        margin-top: 3rem;
-        margin-right: 8rem;
-    }
-
-}
-
-
-@media only screen and (max-width:600px){
-    .cardContent{
-        justify-content: center;
-
-    }
-    .card--style{
-        width: 70% !important;
-        margin-bottom: 2rem;
-        margin-top: 2rem;
-    }
-
-    li{
-        display: none;
-    }
-
-    nav{
-        justify-content: center;
-        padding-right: 0rem;
-    }
-
-    .nav-logo{
-        margin-right: 0rem;
-    }
+    /* Nav Bar */
 
     .logo-h1{
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
+
+    .beer-logo{
+        height: 3rem;
+        padding-right: 2rem;
+    }
+
+    /* Nav Bar Finished */
+
+
+    /* Filters */
 
     .filter-container{
-        height: 40vh;
+        height: 25vh;
+        width: 100vw;
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+    
+    .filter-beverages-container{
+        height: 50%;
+        width: 50%;
+    }
+    
+    .search-container{
+        height: 50%;
+        width: 50%;
+    }
+    
+    .select-container{
+        height: 50%;
+        width: 50%;
+    }
+    
+    .refresh-container{
+        height: 50%;
+        width: 50%;
+    }
+
+    .input-search{
+        width: 8rem;
+        padding-right: 0rem;
+        margin-right: 1rem;
+    }
+    
+    label{
+        padding: 0.4rem;
+        font-size: 1rem;
+    }
+    
+    /* Filters Finished */
+    
+    
+    /* Cards */
+    
+    .cardContent{
+        max-height: 1250vh;
+        display: flex;
         justify-content: center;
     }
-
-    .refreshButton{
-        margin-left: 2rem;
+    
+    .card--style{
+        width: 52% !important;
+        height: 26rem;
     }
+    
+    .card-title{
+        padding-bottom: 0.6rem;
+        padding-top: 1rem;
+    }
+    
+    .moreInformation{
+        margin-top: 0rem;
+    }
+    
+    /* Cards Finished */
+}
 
-};
+
+
+
+
+
+
+/* Tablet */
+
+@media only screen and (min-width:566px) and (max-width: 960px){
+
+    /* Filters */
+
+.filter-container{
+    height: 25vh;
+    width: 100vw;
+}
+
+.filter-beverages-container{
+    height: 50%;
+    width: 50%;
+}
+
+.search-container{
+    height: 50%;
+    width: 50%;
+}
+
+.select-container{
+    height: 50%;
+    width: 50%;
+}
+
+.refresh-container{
+    height: 50%;
+    width: 50%;
+}
+
+label{
+    padding: 0.4rem;
+    font-size: 1rem;
+}
+
+/* Filters Finished */
+
+
+/* Nav Bar */
+
+.logo-h1{
+    font-size: 1.6rem;
+}
+
+.beer-logo{
+    height: 3.4rem;
+    padding-right: 2rem;
+}
+
+/* Nav Bar Finished */
+
+
+
+/* Cards */
+
+.cardContent{
+    max-height: 1100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.card--style{
+    width: 50% !important;
+    height: 22rem;
+}
+
+.card-title{
+    padding-bottom: 0.6rem;
+    padding-top: 1rem;
+}
+
+.moreInformation{
+    margin-top: 0rem;
+}
+
+/* Cards Finished */
+
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width:961px) and (max-width: 1279px){
+
+/* Filters */
+
+.filter-container{
+    height: 25vh;
+    width: 100vw;
+}
+
+.filter-beverages-container{
+    height: 50%;
+    width: 50%;
+}
+
+.search-container{
+    height: 50%;
+    width: 50%;
+}
+
+.select-container{
+    height: 50%;
+    width: 50%;
+}
+
+.refresh-container{
+    height: 50%;
+    width: 50%;
+}
+
+label{
+    padding: 0.4rem;
+    font-size: 1rem;
+}
+
+/* Filters Finished */
+
+
+/* Cards */
+
+.cardContent{
+    width: 100vw;
+    max-height: 600vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: url(./img/brew.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 2rem;
+
+}
+
+.card--style{
+    width: 30% !important;
+    height: 24rem;
+    margin-right: 6rem;
+    margin-left: 6rem; 
+}
+
+.card-title{
+    padding-bottom: 0.6rem;
+    padding-top: 1rem;
+}
+
+.moreInformation{
+    margin-top: 0rem;
+}
+
+/* Cards Finished */
+
+}
 
