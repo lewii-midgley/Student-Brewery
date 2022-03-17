@@ -40,8 +40,8 @@ li{
 }
 
 
-/* Nav Bar */
 
+/* Nav Bar */
 
 nav{
     height: 15vh;
@@ -258,9 +258,18 @@ select{
     text-align: center;
     color: black;
     background: white;
-    border: 2px solid white;
+    border: 1px solid white;
     margin-top: 0.4rem;
 }
+
+.moreInformation:hover{
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+
+
+
 
 /* Cards Finished */
 
@@ -268,21 +277,83 @@ select{
 
 /* Modal */
 
+.modal-header{
+    background-color: black;
+    border: none;
+}
+
 .modal-title{
     width: 100%;
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 400;
+    color: white;
+    padding-left: 2rem;
+    text-align: center;
+}
+
+.close{
+    color: white;
+}
+
+.close:hover{
+    color: white;
+}
+
+.modal-body{
+    background: rgb(224, 191, 129);
 }
 
 .modalTitle{
     text-align: center;
     font-family: 'Sigmar One', cursive;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+.card-img-top-modal{
+    height: 12rem;
+    width: 12rem;
+    margin-left: 8.4rem;
+    padding-bottom: 1.4rem;
 }
 
 .model-text{
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 400;
 }
+
+.modal-footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #FAFAF4;
+    padding-left: 30%;
+    padding-right: 30%;
+}
+
+.btn-primary{
+    background: white;
+    font-size: 1rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+    color: black;
+    border: 1px solid white;
+}
+
+.btn-primary:hover{
+    color: black;
+    background: white;
+    border: 1px solid black;
+}
+
+
+.btn-secondary{
+    font-size: 1rem;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+
+
+
 
 /* Modal Finished */
 
@@ -324,9 +395,12 @@ select{
 
 
 
+
+
 /* Mobile */
 
 @media only screen and (max-width:565px){
+
 
     /* Nav Bar */
 
@@ -359,11 +433,13 @@ select{
     .search-container{
         height: 50%;
         width: 50%;
+        padding-left: 0rem;
     }
     
     .select-container{
         height: 50%;
         width: 50%;
+        padding-left: 0rem;
     }
     
     .refresh-container{
@@ -396,6 +472,11 @@ select{
     .card--style{
         width: 52% !important;
         height: 26rem;
+    }
+
+    .card-img-top{
+        height: 10rem;
+        width: 10rem;
     }
     
     .card-title{
@@ -435,11 +516,13 @@ select{
 .search-container{
     height: 50%;
     width: 50%;
+    padding-left: 0rem;
 }
 
 .select-container{
     height: 50%;
     width: 50%;
+    padding-left: 0rem;
 }
 
 .refresh-container{
@@ -481,6 +564,11 @@ label{
 .card--style{
     width: 50% !important;
     height: 22rem;
+}
+
+.card-img-top{
+    height: 9rem;
+    width: 9rem;
 }
 
 .card-title{
@@ -561,6 +649,11 @@ label{
     height: 24rem;
     margin-right: 6rem;
     margin-left: 6rem; 
+}
+
+.card-img-top{
+    height: 10rem;
+    width: 10rem;
 }
 
 .card-title{

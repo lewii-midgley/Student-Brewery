@@ -129,7 +129,7 @@ function modal(){
                 $("#objectArrayModalInfo").empty().append(
                     `
                        <h2 class="modalTitle">${objectArray[i].name}</h2>
-                       <img class="card-img-top" src="${objectArray[i].image}" alt="Card image cap">
+                       <img class="card-img-top-modal" src="${objectArray[i].image}" alt="Card image cap">
                        <p class="model-text">${objectArray[i].description}</p>
                        <p class="model-text">Price: $${objectArray[i].price}</p>
                        <p class="model-text">Taste Rating: ${objectArray[i].rating}</p>
