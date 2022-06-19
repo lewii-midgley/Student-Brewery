@@ -27,8 +27,6 @@ a:hover{
     text-decoration: none;
 }
 
-
-
 li{
     padding: 2rem;
     font-family: 'Bai Jamjuree', sans-serif;
@@ -44,7 +42,7 @@ li{
 /* Nav Bar */
 
 nav{
-    height: 15vh;
+    height: 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,7 +74,7 @@ nav{
 /* Filters */
 
 .filter-container{
-    height: 12vh;
+    height: 7rem;
     width: 100vw;
     display: flex;
     justify-content: space-between;
@@ -101,7 +99,6 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-    
     padding-left: 5rem;
 }
 
@@ -111,7 +108,6 @@ nav{
     display: flex;
     justify-content: center;
     align-items: center;
-
     padding-left: 4rem;
 }
 
@@ -186,7 +182,7 @@ select{
 
 .cardContent{
     width: 100vw;
-    max-height: 335vh;
+    min-height: 76.4vh;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -198,7 +194,7 @@ select{
 }
 
 .card--style{
-    width: 20% !important;
+    width: 22rem !important;
     height: 28rem;
     background: #FAFAF4;
     padding: 1rem;
@@ -258,15 +254,22 @@ select{
     text-align: center;
     color: black;
     background: white;
-    border: 1px solid white;
+    border: 2px solid white;
     margin-top: 0.4rem;
 }
 
 .moreInformation:hover{
-    color: black;
-    background: white;
-    border: 1px solid black;
+    border: 1px solid whitesmoke !important;
 }
+
+.moreInformation:after{
+    border: 1px solid whitesmoke !important;
+}
+
+.moreInformation:active{
+    border: 1px solid whitesmoke !important;
+}
+
 
 
 
@@ -278,7 +281,8 @@ select{
 /* Modal */
 
 .modal-header{
-    background-color: black;
+    /* background-color: black; */
+    background-color: white;
     border: none;
 }
 
@@ -286,17 +290,20 @@ select{
     width: 100%;
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 400;
-    color: white;
+    /* color: white; */
+    color: black;
     padding-left: 2rem;
     text-align: center;
 }
 
 .close{
-    color: white;
+    /* color: white; */
+    color: black;
 }
 
 .close:hover{
-    color: white;
+    /* color: white; */
+    color: black;
 }
 
 .modal-body{
@@ -362,7 +369,7 @@ select{
 /* Footer */
 
 .footer{
-    height: 15vh;
+    height: 8rem;
     width: 100vw;
     background: black;
     display: flex;
@@ -419,38 +426,27 @@ select{
     /* Filters */
 
     .filter-container{
-        height: 25vh;
+        height: 8rem;
         width: 100vw;
-        padding-right: 0rem;
-        padding-left: 0rem;
     }
     
     .filter-beverages-container{
-        height: 50%;
-        width: 50%;
+        display: none;
     }
     
     .search-container{
-        height: 50%;
+        height: 100%;
         width: 50%;
         padding-left: 0rem;
     }
     
     .select-container{
-        height: 50%;
-        width: 50%;
-        padding-left: 0rem;
+        display: none;
     }
     
     .refresh-container{
-        height: 50%;
+        height: 100%;
         width: 50%;
-    }
-
-    .input-search{
-        width: 8rem;
-        padding-right: 0rem;
-        margin-right: 1rem;
     }
     
     label{
@@ -464,14 +460,14 @@ select{
     /* Cards */
     
     .cardContent{
-        max-height: 1250vh;
+        min-height: 63.8vh;
         display: flex;
         justify-content: center;
     }
     
     .card--style{
-        width: 52% !important;
-        height: 26rem;
+        width: 22rem !important;
+        height: 28rem;
     }
 
     .card-img-top{
@@ -504,29 +500,26 @@ select{
     /* Filters */
 
 .filter-container{
-    height: 25vh;
+    height: 8rem;
     width: 100vw;
 }
 
 .filter-beverages-container{
-    height: 50%;
-    width: 50%;
+    display: none;
 }
 
 .search-container{
-    height: 50%;
+    height: 100%;
     width: 50%;
     padding-left: 0rem;
 }
 
 .select-container{
-    height: 50%;
-    width: 50%;
-    padding-left: 0rem;
+    display: none;
 }
 
 .refresh-container{
-    height: 50%;
+    height: 100%;
     width: 50%;
 }
 
@@ -556,14 +549,16 @@ label{
 /* Cards */
 
 .cardContent{
-    max-height: 1100vh;
+    min-height: 68.4vh;
     display: flex;
     justify-content: center;
 }
 
 .card--style{
-    width: 50% !important;
-    height: 22rem;
+    width: 22rem !important;
+    height: 28rem;
+    margin-right: 2rem;
+    margin-left: 2rem; 
 }
 
 .card-img-top{
@@ -596,7 +591,7 @@ label{
 /* Filters */
 
 .filter-container{
-    height: 25vh;
+    height: 12rem;
     width: 100vw;
 }
 
@@ -632,7 +627,7 @@ label{
 
 .cardContent{
     width: 100vw;
-    max-height: 600vh;
+    min-height: 68.5vh;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -641,14 +636,13 @@ label{
     background-repeat: no-repeat;
     background-position: center;
     padding-bottom: 2rem;
-
 }
 
 .card--style{
-    width: 30% !important;
-    height: 24rem;
-    margin-right: 6rem;
-    margin-left: 6rem; 
+    width: 22rem !important;
+    height: 28rem;
+    margin-right: 2rem;
+    margin-left: 2rem; 
 }
 
 .card-img-top{
