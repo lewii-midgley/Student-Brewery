@@ -39,6 +39,9 @@ li{
 
 
 
+
+
+
 /* Nav Bar */
 
 nav{
@@ -53,7 +56,7 @@ nav{
 .logo-h1{
     font-family: 'Sigmar One', cursive;
     letter-spacing: 0.1rem;
-    font-size: 2.2rem;
+    font-size: 2rem;
 }
 
 .nav-logo{
@@ -281,7 +284,6 @@ select{
 /* Modal */
 
 .modal-header{
-    /* background-color: black; */
     background-color: white;
     border: none;
 }
@@ -290,19 +292,16 @@ select{
     width: 100%;
     font-family: 'Bai Jamjuree', sans-serif;
     font-weight: 400;
-    /* color: white; */
     color: black;
     padding-left: 2rem;
     text-align: center;
 }
 
 .close{
-    /* color: white; */
     color: black;
 }
 
 .close:hover{
-    /* color: white; */
     color: black;
 }
 
@@ -322,6 +321,7 @@ select{
     width: 12rem;
     margin-left: 8.4rem;
     padding-bottom: 1.4rem;
+    border: 2px solid blue;
 }
 
 .model-text{
@@ -412,11 +412,11 @@ select{
     /* Nav Bar */
 
     .logo-h1{
-        font-size: 1.4rem;
+        font-size: 1rem;
     }
 
     .beer-logo{
-        height: 3rem;
+        height: 2rem;
         padding-right: 2rem;
     }
 
@@ -436,7 +436,7 @@ select{
     
     .search-container{
         height: 100%;
-        width: 50%;
+        width: 100%;
         padding-left: 0rem;
     }
     
@@ -445,8 +445,7 @@ select{
     }
     
     .refresh-container{
-        height: 100%;
-        width: 50%;
+        display: none;
     }
     
     label{
@@ -483,8 +482,24 @@ select{
     .moreInformation{
         margin-top: 0rem;
     }
-    
+
+
+    .card-img-top-modal{
+        margin-left: 5rem;
+    }
+
     /* Cards Finished */
+    
+
+    .footer-p{
+        font-size: 0.8rem;
+    }
+    
+    .footer-img{
+        height: 2rem;
+        padding-left: 1.4rem;
+        padding-right: 1.4rem;
+    }
 }
 
 
@@ -578,8 +593,6 @@ label{
 /* Cards Finished */
 
 }
-
-
 
 
 

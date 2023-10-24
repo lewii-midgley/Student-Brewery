@@ -14,7 +14,7 @@ let objectArray = [
         rating: '7/10',
         image:'./img/diesel.png',
         cps: '$1.39',
-        tags: ['bourbon', 'coke', 'can', 'dirty'],
+        tags: ['bourbon', 'coke', 'cans', 'dirty'],
         description: 'The 8% Diesel was deadly. Those were dark days that I pray to which we shall never return. The first can was like drinking crude oil, but once your body had adjusted and your spincter had unclenched, it was way, way too easy to forget how strong it was, sip your way through 11 more of them and wake up in a dumpster outside the Hunter Centre.'
     },
     {
@@ -33,7 +33,7 @@ let objectArray = [
         id: 123,
         name: 'Bavaria',
         type: 'Lager',
-        what: 'Bavarian Premium Lager',
+        what: 'Premium German Lager',
         price: 3.49,
         rating: '7/10',
         image:'./img/Bavaria.png',
@@ -62,7 +62,7 @@ let objectArray = [
         rating: '4/10',
         image:'./img/king.png',
         cps: '$1.29',
-        tags: ['kingy', 'india', 'beer', 'strong', 'blackout'],
+        tags: ['kingy', 'india', 'beer', 'strong', 'blackout', 'cans'],
         description: 'This beer created in India is cheap, easy to drink, and much like its slogan (“The King of Good Times”) suggests, it’s a fucking good time. However, there’s a reason why you don’t see hordes of Uni students drinking these delectable drunken delights, it’s because these fuckers are sneaky. One minute you’re fine, then the next you’re absolutely pissed off your tits, passed out in your mate’s room, lounge or alleyway, most likely all three. The secret in Kingfisher’s deception is how easy they are to get down. They’re crisp, light and taste fine, unlike most other higher percentage beers. My theory is that much like a fish is attracted to a lure, skint students see this price, fall for the ploy, and never make the same mistake again.'
     },
     {
@@ -74,7 +74,7 @@ let objectArray = [
         rating: '3/10',
         image:'./img/clear.png',
         cps: '$0.91',
-        tags: [''],
+        tags: ['wine'],
         description: 'Cleanskin Sauvignon Blanc is a playful number that dances gently on the taste buds and fills the room with laughter. Of course, by “dance,” I mean “stomp” and by “laughter” I mean “screams of pain”. Cleanskin takes all the leftover backwash from all the half-drunk glasses in all the dirty pubs around the country, chucks them into a big plastic bucket, and stirs it around until it’s just an indecipherable mess of grapes, spit, and ethanol.'
     },
     {
@@ -98,12 +98,12 @@ let objectArray = [
         rating: '5.5/10',
         image:'./img/nitro.png',
         cps: '$1.39',
-        tags: [''],
+        tags: ['bottle'],
         description: 'Nitro is a kick up the arse from a big, heavy boot made of pure methamphetamine. The fact that this drink even exists is evidence enough that the human race is destined to destroy itself. Let’s break it down. At its core, Nitro is a fairly simple cocktail of vodka and orange soda – an artificial screwdriver, if you will.  Then they threw both taurine and guarana in there and made it as strong as legally possible. The end product is absolutely not safe for human consumption, but it’s undeniably yum – anything with that much sugar has to be. '
     }
 ];
 
-// prompt('Are you over the age of 18?');
+prompt('Are you over the age of 18?');
 
 function objectArrayCardInfo(){
 
