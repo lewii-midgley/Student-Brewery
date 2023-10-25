@@ -352,17 +352,16 @@ select{
     border: 1px solid black;
 }
 
-
 .btn-secondary{
     font-size: 1rem;
     font-family: 'Bai Jamjuree', sans-serif;
 }
 
 
-
-
-
 /* Modal Finished */
+
+
+
 
 
 
@@ -392,6 +391,10 @@ select{
 }
 
 /* Footer Finished */
+
+
+
+
 
 
 
@@ -455,6 +458,9 @@ select{
     
     /* Filters Finished */
     
+
+
+
     
     /* Cards */
     
@@ -481,6 +487,12 @@ select{
     
     .moreInformation{
         margin-top: 0rem;
+    }
+
+
+    .card-img-top-modal{
+        margin-left: 20%;
+        margin-right: 50%;
     }
 
     /* Cards Finished */
